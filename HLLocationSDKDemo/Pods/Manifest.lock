@@ -1,0 +1,23 @@
+PODS:
+  - AMap3DMap (2.5.0)
+  - Baidu-Maps-iOS-SDK (2.6.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - FMDBHelpers (0.0.7):
+    - FMDB (~> 2.3)
+
+DEPENDENCIES:
+  - AMap3DMap
+  - Baidu-Maps-iOS-SDK
+  - FMDBHelpers
+
+SPEC CHECKSUMS:
+  AMap3DMap: 9f6274e39cd8937b5651f868c35deef9a37edce3
+  Baidu-Maps-iOS-SDK: 260447c2270b44470d7c0d49a7f1a154b4703973
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  FMDBHelpers: c6bd06c59049d51d9072180f253b6ee53f695bf3
+
+COCOAPODS: 0.37.0

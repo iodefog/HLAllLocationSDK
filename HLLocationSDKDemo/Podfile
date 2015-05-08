@@ -1,0 +1,4 @@
+platform:ios,'7.0'
+pod 'Baidu-Maps-iOS-SDK'
+pod 'AMap3DMap'
+pod 'FMDBHelpers'

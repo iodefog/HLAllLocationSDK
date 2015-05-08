@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q1-BT-xRo">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="9Q1-BT-xRo" secondAttribute="bottom" constant="-26" id="XIb-vo-dAc">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="9Q1-BT-xRo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="44" id="dN0-Ea-Oe2">
+                                <variation key="widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="9Q1-BT-xRo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iOS-f6-0S4"/>
+                            <constraint firstAttribute="trailing" secondItem="9Q1-BT-xRo" secondAttribute="trailing" id="kaj-Xy-dgS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Q1-BT-xRo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XIb-vo-dAc"/>
+                                <exclude reference="dN0-Ea-Oe2"/>
+                                <exclude reference="iOS-f6-0S4"/>
+                                <exclude reference="kaj-Xy-dgS"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Q1-BT-xRo"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XIb-vo-dAc"/>
+                                <include reference="dN0-Ea-Oe2"/>
+                                <include reference="iOS-f6-0S4"/>
+                                <include reference="kaj-Xy-dgS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="locationResultTextView" destination="9Q1-BT-xRo" id="eaM-jK-IOU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

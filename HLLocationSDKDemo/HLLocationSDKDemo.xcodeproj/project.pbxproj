@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F7783D51AFC89A900ACC7D8 /* HLAllSDKLcationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7783D41AFC89A900ACC7D8 /* HLAllSDKLcationManager.m */; };
+		4F911EFC1B04854500FA1476 /* HLAllSDKLcationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F911EFB1B04854500FA1476 /* HLAllSDKLcationManager.m */; };
 		4FAC087D1AF9ED790028D1CF /* QMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */; };
 		4FAC08801AF9FC910028D1CF /* HLGoTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC087F1AF9FC910028D1CF /* HLGoTimer.m */; };
 		4FBA30121AF9A98E00590F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA30111AF9A98E00590F02 /* main.m */; };
@@ -23,9 +23,9 @@
 /* Begin PBXFileReference section */
 		1B18A2BAFC886A4D232120DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4199DBFD99A75050659C4687 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F7783D31AFC89A900ACC7D8 /* HLAllSDKLcationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAllSDKLcationManager.h; sourceTree = "<group>"; };
-		4F7783D41AFC89A900ACC7D8 /* HLAllSDKLcationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAllSDKLcationManager.m; sourceTree = "<group>"; };
 		4F7783D71AFC8A5400ACC7D8 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		4F911EFA1B04854500FA1476 /* HLAllSDKLcationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAllSDKLcationManager.h; sourceTree = "<group>"; };
+		4F911EFB1B04854500FA1476 /* HLAllSDKLcationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAllSDKLcationManager.m; sourceTree = "<group>"; };
 		4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMapKit.bundle; sourceTree = "<group>"; };
 		4FAC087E1AF9FC910028D1CF /* HLGoTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLGoTimer.h; sourceTree = "<group>"; };
 		4FAC087F1AF9FC910028D1CF /* HLGoTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGoTimer.m; sourceTree = "<group>"; };
@@ -58,14 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F7783D21AFC89A900ACC7D8 /* HLAllLcationManager */ = {
+		4F911EF91B04854500FA1476 /* HLAllSDKLcationManager */ = {
 			isa = PBXGroup;
 			children = (
-				4F7783D31AFC89A900ACC7D8 /* HLAllSDKLcationManager.h */,
-				4F7783D41AFC89A900ACC7D8 /* HLAllSDKLcationManager.m */,
+				4F911EFA1B04854500FA1476 /* HLAllSDKLcationManager.h */,
+				4F911EFB1B04854500FA1476 /* HLAllSDKLcationManager.m */,
 			);
-			name = HLAllLcationManager;
-			path = ../../HLAllLcationManager;
+			name = HLAllSDKLcationManager;
+			path = ../../HLAllSDKLcationManager;
 			sourceTree = "<group>";
 		};
 		4FBA30031AF9A98E00590F02 = {
@@ -96,7 +96,7 @@
 				4FBA30171AF9A98E00590F02 /* ViewController.m */,
 				4FAC087E1AF9FC910028D1CF /* HLGoTimer.h */,
 				4FAC087F1AF9FC910028D1CF /* HLGoTimer.m */,
-				4F7783D21AFC89A900ACC7D8 /* HLAllLcationManager */,
+				4F911EF91B04854500FA1476 /* HLAllSDKLcationManager */,
 				4FBA30191AF9A98E00590F02 /* Main.storyboard */,
 				4FBA301C1AF9A98E00590F02 /* Images.xcassets */,
 				4FBA301E1AF9A98E00590F02 /* LaunchScreen.xib */,
@@ -260,7 +260,7 @@
 				4FBA30181AF9A98E00590F02 /* ViewController.m in Sources */,
 				4FBA30151AF9A98E00590F02 /* AppDelegate.m in Sources */,
 				4FAC08801AF9FC910028D1CF /* HLGoTimer.m in Sources */,
-				4F7783D51AFC89A900ACC7D8 /* HLAllSDKLcationManager.m in Sources */,
+				4F911EFC1B04854500FA1476 /* HLAllSDKLcationManager.m in Sources */,
 				4FBA30121AF9A98E00590F02 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HLGoTimer"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of HLGoTimer."
+  s.version      = "1.0.0"
+  s.summary      = "获取时间差，很精确，比毫秒还精确。例如1.5555s"
 
   s.description  = <<-DESC
-                   A longer description of HLGoTimer in Markdown format.
+                   使用方法，使用第一个方法，获取开始时间字符串，然后在结束时，把开始时间传入到第二个方法里，就能得到时间差。可以用到一个方法的执行时间统计上
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/HLGoTimer"
+  s.homepage     = "https://github.com/lihongli528628/HLAllLocationSDK/tree/1.0/HLGoTimer"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/HLGoTimer.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/lihongli528628/HLAllLocationSDK", :tag => "1.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Classes", "HLGoTimer/**"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -133,4 +133,4 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-end
+end`

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F911EFC1B04854500FA1476 /* HLAllSDKLcationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F911EFB1B04854500FA1476 /* HLAllSDKLcationManager.m */; };
+		4F911EFE1B048E3400FA1476 /* QMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F911EFD1B048E3400FA1476 /* QMapKit.framework */; };
 		4FAC087D1AF9ED790028D1CF /* QMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */; };
 		4FAC08801AF9FC910028D1CF /* HLGoTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAC087F1AF9FC910028D1CF /* HLGoTimer.m */; };
 		4FBA30121AF9A98E00590F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBA30111AF9A98E00590F02 /* main.m */; };
@@ -16,7 +17,6 @@
 		4FBA301B1AF9A98E00590F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA30191AF9A98E00590F02 /* Main.storyboard */; };
 		4FBA301D1AF9A98E00590F02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA301C1AF9A98E00590F02 /* Images.xcassets */; };
 		4FBA30201AF9A98E00590F02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA301E1AF9A98E00590F02 /* LaunchScreen.xib */; };
-		4FBA30361AF9AD6F00590F02 /* QMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBA30351AF9AD6F00590F02 /* QMapKit.framework */; };
 		E20EA656576AB85A4466D20C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4199DBFD99A75050659C4687 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +26,7 @@
 		4F7783D71AFC8A5400ACC7D8 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		4F911EFA1B04854500FA1476 /* HLAllSDKLcationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAllSDKLcationManager.h; sourceTree = "<group>"; };
 		4F911EFB1B04854500FA1476 /* HLAllSDKLcationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAllSDKLcationManager.m; sourceTree = "<group>"; };
+		4F911EFD1B048E3400FA1476 /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = SOURCE_ROOT; };
 		4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QMapKit.bundle; sourceTree = "<group>"; };
 		4FAC087E1AF9FC910028D1CF /* HLGoTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLGoTimer.h; sourceTree = "<group>"; };
 		4FAC087F1AF9FC910028D1CF /* HLGoTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGoTimer.m; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		4FBA301F1AF9A98E00590F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4FBA302A1AF9A98E00590F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FBA302B1AF9A98E00590F02 /* HLLocationSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLLocationSDKDemoTests.m; sourceTree = "<group>"; };
-		4FBA30351AF9AD6F00590F02 /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = "<group>"; };
 		6BE74579915909E0B3A4B2BD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FBA30361AF9AD6F00590F02 /* QMapKit.framework in Frameworks */,
+				4F911EFE1B048E3400FA1476 /* QMapKit.framework in Frameworks */,
 				E20EA656576AB85A4466D20C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +108,7 @@
 		4FBA300F1AF9A98E00590F02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F911EFD1B048E3400FA1476 /* QMapKit.framework */,
 				4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */,
 				4FBA30101AF9A98E00590F02 /* Info.plist */,
 				4FBA30111AF9A98E00590F02 /* main.m */,
@@ -136,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				4F7783D71AFC8A5400ACC7D8 /* libPods.a */,
-				4FBA30351AF9AD6F00590F02 /* QMapKit.framework */,
 				4199DBFD99A75050659C4687 /* libPods.a */,
 			);
 			name = Frameworks;

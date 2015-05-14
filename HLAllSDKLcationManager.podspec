@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "HLAllSDKLcationManager"
   s.version      = "1.0"
-  s.summary      = "A short description of HLAllSDKLcationManager."
+  s.summary      = "Apple 地图，腾讯地图，高德地图，百度地图，定位封装。方法实现了每种地图的定位，包括成功和失败回调"
 
   s.description  = <<-DESC
                    A longer description of HLAllSDKLcationManager in Markdown format.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "https://github.com/lihongli528628/HLAllSDKLcationManager"
+  s.homepage     = "https://github.com/lihongli528628/HLAllLocationSDK"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 

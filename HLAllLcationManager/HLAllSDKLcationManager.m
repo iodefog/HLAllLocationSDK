@@ -1,5 +1,5 @@
 //
-//  HLAllLcationManager.m
+//  HLSDKAllLcationManager.m
 //  HLLocationSDKDemo
 //
 //  Created by lhl on 15/5/6.
@@ -13,9 +13,9 @@
 #define GaodeMapApk @"dbedafe5dc34aad898c0fa80482f7ad8"
 #define TencentMapApk @"WMBBZ-Q23AJ-OJ5FE-F6N5D-QJDN2-36B7B"
 
-#import "HLAllLcationManager.h"
+#import "HLAllSDKLcationManager.h"
 
-@interface HLAllLcationManager()<BMKGeneralDelegate, BMKLocationServiceDelegate, MAMapViewDelegate, CLLocationManagerDelegate, QMapViewDelegate>
+@interface HLAllSDKLcationManager()<BMKGeneralDelegate, BMKLocationServiceDelegate, MAMapViewDelegate, CLLocationManagerDelegate, QMapViewDelegate>
 {
     
 }
@@ -33,13 +33,13 @@
 
 @end
 
-@implementation HLAllLcationManager
+@implementation HLAllSDKLcationManager
 
 + (id)shareInstance{
     static id helper = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        helper = [[HLAllLcationManager alloc]  init];
+        helper = [[HLAllSDKLcationManager alloc]  init];
 //        [helper installMapSDK];
     });
     return helper;

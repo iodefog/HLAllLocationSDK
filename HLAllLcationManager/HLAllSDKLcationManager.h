@@ -1,5 +1,5 @@
 //
-//  HLAllLcationManager.h
+//  HLAllSDKLcationManager.h
 //  HLLocationSDKDemo
 //
 //  Created by lhl on 15/5/6.
@@ -17,7 +17,7 @@ typedef void(^KQMapLocationBlock)(QUserLocation *loction, NSError *error);
 typedef void(^KMAMapLocationBlock)(MAUserLocation *loction, NSError *error);
 
 
-@interface HLAllLcationManager : NSObject
+@interface HLAllSDKLcationManager : NSObject
 
 + (void)installMapSDK;
 

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HLAllLcationManager.h"
+#import "HLAllSDKLcationManager.h"
 #import "HLGoTimer.h"
 #import "FMDBHelpers.h"
 
@@ -43,7 +43,7 @@
     NSMutableString *resultStr = [NSMutableString string];
     [resultStr appendFormat:@"%@",[NSString stringWithFormat:@"当前第%@次定位",@(count.integerValue+1)]];
 
-    [[HLAllLcationManager shareInstance] startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
+    [[HLAllSDKLcationManager shareInstance] startSystemLocationWithRes:^(CLLocation *loction, NSError *error) {
         if (error) {
             [resultStr appendFormat:@"系统定位耗时：%@s\n", @([HLGoTimer endDateString:systemDate])];
             [resultStr appendFormat:@"系统定位失败error = %@\n\n",error];
@@ -78,7 +78,7 @@
      */
     
     NSString *gaodeDate = [HLGoTimer startDateString];
-    [[HLAllLcationManager shareInstance] startGaodeLocationWithReg:^(MAUserLocation *loction, NSError *error){
+    [[HLAllSDKLcationManager shareInstance] startGaodeLocationWithReg:^(MAUserLocation *loction, NSError *error){
 
         if (error) {
             [resultStr appendFormat:@"高德定位耗时：%@s\n", @([HLGoTimer endDateString:gaodeDate])];
@@ -116,7 +116,7 @@
      */
     
     NSString *QmapDate = [HLGoTimer startDateString];
-    [[HLAllLcationManager shareInstance] startQmapLocationWithReg:^(QUserLocation *loction, NSError *error) {
+    [[HLAllSDKLcationManager shareInstance] startQmapLocationWithReg:^(QUserLocation *loction, NSError *error) {
 
         if (error) {
             [resultStr appendFormat:@"腾讯定位耗时：%@s\n", @([HLGoTimer endDateString:QmapDate])];
@@ -156,7 +156,7 @@
      */
     
     NSString *bmkDate = [HLGoTimer startDateString];
-    [[HLAllLcationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error){
+    [[HLAllSDKLcationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error){
 
         if (error) {
             [resultStr appendFormat:@"百度定位耗时：%@s\n", @([HLGoTimer endDateString:bmkDate])];

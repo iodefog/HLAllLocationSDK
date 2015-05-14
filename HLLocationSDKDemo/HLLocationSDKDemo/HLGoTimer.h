@@ -25,7 +25,7 @@
  *
  *  @param startDateStr 方法执行前的时间字符串
  *
- *  @return 返回执行了多少秒
+ *  @return 返回执行了多少时间
  */
 + (float)endDateString:(NSString *)startDateStr;
 

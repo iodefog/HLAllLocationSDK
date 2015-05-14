@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HLAllLcationManager.h"
+#import "HLAllSDKLcationManager.h"
 
 
 @interface AppDelegate ()
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [HLAllLcationManager installMapSDK];
+    [HLAllSDKLcationManager installMapSDK];
     
     return YES;
 }

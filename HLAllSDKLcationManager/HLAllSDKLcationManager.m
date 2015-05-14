@@ -15,19 +15,19 @@
 
 #import "HLAllSDKLcationManager.h"
 
-@interface HLAllSDKLcationManager()<BMKGeneralDelegate, BMKLocationServiceDelegate, MAMapViewDelegate, CLLocationManagerDelegate, QMapViewDelegate>
+@interface HLAllSDKLcationManager()<BMKGeneralDelegate, BMKLocationServiceDelegate, MAMapViewDelegate, CLLocationManagerDelegate>
 {
     
 }
 
 @property (nonatomic, readwrite, strong) CLLocationManager *locationManager;
 @property (nonatomic, readwrite, strong) MAMapView *amapView;
-@property (nonatomic, readwrite, strong) QMapView *qmapView;
+//@property (nonatomic, readwrite, strong) QMapView *qmapView;
 @property (nonatomic, readwrite, strong) BMKLocationService *locService;
 
 
 @property (nonatomic, readwrite, copy) KSystemLocationBlock kSystemLocationBlock;
-@property (nonatomic, readwrite, copy) KQMapLocationBlock   kQMapLocationBlock;
+//@property (nonatomic, readwrite, copy) KQMapLocationBlock   kQMapLocationBlock;
 @property (nonatomic, readwrite, copy) KMAMapLocationBlock  kMAMapLocationBlock;
 @property (nonatomic, readwrite, copy) KBMKLocationBlock    kBMKLocationBlock;
 
@@ -47,7 +47,7 @@
 
 
 + (void)installMapSDK{
-    [QMapServices sharedServices].apiKey = TencentMapApk;
+//    [QMapServices sharedServices].apiKey = TencentMapApk;
     
     BMKMapManager *manager = [[BMKMapManager alloc] init];
     [manager start:BaiduMapApk generalDelegate:nil];
@@ -182,28 +182,28 @@
 
 #pragma mark - 腾讯
 
-/**
- *  腾讯地图定位
- */
-- (void)startQmapLocationWithReg:(KQMapLocationBlock)qMapLocationBlock{
-    self.kQMapLocationBlock = qMapLocationBlock;
-    
-    if (!self.qmapView) {
-        self.qmapView = [[QMapView alloc] init];
-    }
-    self.qmapView.delegate = self;
-    [self.qmapView setShowsUserLocation:YES];
-}
-
-- (void)mapViewWillStartLocatingUser:(QMapView *)mapView
-{
-    //获取开始定位的状态
-}
-
-- (void)mapViewDidStopLocatingUser:(QMapView *)mapView
-{
-    //获取停止定位的状态
-}
+///**
+// *  腾讯地图定位
+// */
+//- (void)startQmapLocationWithReg:(KQMapLocationBlock)qMapLocationBlock{
+//    self.kQMapLocationBlock = qMapLocationBlock;
+//    
+//    if (!self.qmapView) {
+//        self.qmapView = [[QMapView alloc] init];
+//    }
+//    self.qmapView.delegate = self;
+//    [self.qmapView setShowsUserLocation:YES];
+//}
+//
+//- (void)mapViewWillStartLocatingUser:(QMapView *)mapView
+//{
+//    //获取开始定位的状态
+//}
+//
+//- (void)mapViewDidStopLocatingUser:(QMapView *)mapView
+//{
+//    //获取停止定位的状态
+//}
 
 // 回调方法和其他地图方法重合，最下面合并成一个方法
 
@@ -231,19 +231,19 @@
         }
     }
     
-    // 腾讯
-    else if ([mapView isKindOfClass:[QMapView class]]){
-        QUserLocation *ulocation = userLocation;
-        
-        [self.qmapView setShowsUserLocation:NO];
-        
-        if(updatingLocation)
-        {
-            //取出当前位置的坐标
-//            NSLog(@"latitude : %f,longitude: %f",ulocation.coordinate.latitude,ulocation.coordinate.longitude);
-            self.kQMapLocationBlock(ulocation, nil);
-        }
-    }
+//    // 腾讯
+//    else if ([mapView isKindOfClass:[QMapView class]]){
+//        QUserLocation *ulocation = userLocation;
+//        
+//        [self.qmapView setShowsUserLocation:NO];
+//        
+//        if(updatingLocation)
+//        {
+//            //取出当前位置的坐标
+////            NSLog(@"latitude : %f,longitude: %f",ulocation.coordinate.latitude,ulocation.coordinate.longitude);
+//            self.kQMapLocationBlock(ulocation, nil);
+//        }
+//    }
 }
 
 /*!
@@ -259,10 +259,10 @@
     }
     
     
-    // 腾讯
-    else if ([mapView isKindOfClass:[QMapView class]]){
-        self.kQMapLocationBlock(nil, error);
-    }
+//    // 腾讯
+//    else if ([mapView isKindOfClass:[QMapView class]]){
+//        self.kQMapLocationBlock(nil, error);
+//    }
 }
 
 

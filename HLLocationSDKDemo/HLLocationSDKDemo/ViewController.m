@@ -10,6 +10,7 @@
 #import "HLAllSDKLcationManager.h"
 #import "HLGoTimer.h"
 #import "FMDBHelpers.h"
+#import "CLLocation+YCLocation.h"
 
 #define DBPATH [NSHomeDirectory() stringByAppendingString:@"/Documents/LocationDB.db"]
 #define DBTableName @"LocationDB"
@@ -154,7 +155,6 @@
     /**
      *  百度定位
      */
-    
     NSString *bmkDate = [HLGoTimer startDateString];
     [[HLAllSDKLcationManager shareInstance] startBMKLocationWithReg:^(BMKUserLocation *loction, NSError *error){
 
@@ -166,12 +166,15 @@
         } else {
             [resultStr appendFormat:@"百度定位耗时：%@s\n", @([HLGoTimer endDateString:bmkDate])];
 
-            [resultStr appendFormat:@"百度定位成功 = %@\n\n",loction.location];
+            [resultStr appendFormat:@"百度定位成功 = %@\n\n",[loction.location locationMarsFromBaidu]];
         }
         
         self.locationResultTextView.text = resultStr;
 
-        NSString *latlng = [NSString stringWithFormat:@"%@,%@", @(loction.location.coordinate.latitude), @(loction.location.coordinate.longitude)];
+        
+        CLLocation *marsLocation = [loction.location locationMarsFromBaidu];
+        
+        NSString *latlng = [NSString stringWithFormat:@"%@,%@", @(marsLocation.coordinate.latitude), @(marsLocation.coordinate.longitude)];
         NSString *duration = [NSString stringWithFormat:@"%@",@([HLGoTimer endDateString:bmkDate])];
         
         FMDatabase *locationDB = [FMDatabase databaseWithPath:DBPATH];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4798C71B05D3FC00D4011D /* CLLocation+YCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4798C61B05D3FC00D4011D /* CLLocation+YCLocation.m */; };
 		4F911EFE1B048E3400FA1476 /* QMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F911EFD1B048E3400FA1476 /* QMapKit.framework */; };
 		4F911F021B048EBD00FA1476 /* HLAllSDKLcationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F911F011B048EBD00FA1476 /* HLAllSDKLcationManager.m */; };
 		4FAC087D1AF9ED790028D1CF /* QMapKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FAC087C1AF9ED790028D1CF /* QMapKit.bundle */; };
@@ -23,6 +24,8 @@
 /* Begin PBXFileReference section */
 		1B18A2BAFC886A4D232120DF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4199DBFD99A75050659C4687 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F4798C51B05D3FC00D4011D /* CLLocation+YCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+YCLocation.h"; sourceTree = "<group>"; };
+		4F4798C61B05D3FC00D4011D /* CLLocation+YCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+YCLocation.m"; sourceTree = "<group>"; };
 		4F7783D71AFC8A5400ACC7D8 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		4F911EFD1B048E3400FA1476 /* QMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QMapKit.framework; sourceTree = SOURCE_ROOT; };
 		4F911F001B048EBD00FA1476 /* HLAllSDKLcationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAllSDKLcationManager.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 			children = (
 				4F911F001B048EBD00FA1476 /* HLAllSDKLcationManager.h */,
 				4F911F011B048EBD00FA1476 /* HLAllSDKLcationManager.m */,
+				4F4798C51B05D3FC00D4011D /* CLLocation+YCLocation.h */,
+				4F4798C61B05D3FC00D4011D /* CLLocation+YCLocation.m */,
 			);
 			name = HLAllSDKLcationManager;
 			path = ../../HLAllSDKLcationManager;
@@ -261,6 +266,7 @@
 				4FBA30151AF9A98E00590F02 /* AppDelegate.m in Sources */,
 				4FAC08801AF9FC910028D1CF /* HLGoTimer.m in Sources */,
 				4F911F021B048EBD00FA1476 /* HLAllSDKLcationManager.m in Sources */,
+				4F4798C71B05D3FC00D4011D /* CLLocation+YCLocation.m in Sources */,
 				4FBA30121AF9A98E00590F02 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

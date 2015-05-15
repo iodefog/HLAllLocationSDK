@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <QMapKit/QMapKit.h>
+#import <QMapKit/QMapKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import "BMapKit.h"
 
 typedef void(^KSystemLocationBlock)(CLLocation *loction, NSError *error);
 typedef void(^KBMKLocationBlock)(BMKUserLocation *loction, NSError *error);
-//typedef void(^KQMapLocationBlock)(QUserLocation *loction, NSError *error);
+typedef void(^KQMapLocationBlock)(QUserLocation *loction, NSError *error);
 typedef void(^KMAMapLocationBlock)(MAUserLocation *loction, NSError *error);
 
 
@@ -43,7 +43,7 @@ typedef void(^KMAMapLocationBlock)(MAUserLocation *loction, NSError *error);
  *
  *  @param qMapLocationBlock 腾讯地图定位成功或失败回调成功
  */
-//- (void)startQmapLocationWithReg:(KQMapLocationBlock)qMapLocationBlock;
+- (void)startQmapLocationWithReg:(KQMapLocationBlock)qMapLocationBlock;
 
 /**
  *  启动百度地图定位
